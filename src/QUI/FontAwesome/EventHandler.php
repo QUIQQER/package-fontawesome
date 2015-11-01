@@ -29,7 +29,7 @@ class EventHandler
     }
 
     /**
-     * Smarty brickarea function {brickarea}
+     * Smarty brickarea function {fontawesome}
      *
      * @param Array $params - function parameter
      * @param \Smarty $smarty - \Smarty
@@ -37,7 +37,7 @@ class EventHandler
      */
     static function fontawesome($params, $smarty)
     {
-        return '<link href="'. URL_OPT_DIR .'bin/unsemantic/assets/stylesheets/unsemantic-grid-responsive.css"
+        return '<link href="'. URL_OPT_DIR .'bin/font-awesome/css/font-awesome.css"
           rel="stylesheet"
           type="text/css"
                />';
