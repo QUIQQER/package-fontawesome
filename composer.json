@@ -1,0 +1,31 @@
+{
+    "name" : "quiqqer/fontawesome",
+    "type" : "quiqqer-plugin",
+    "description" : "",
+    "version" : "dev-master",
+    "license" : "MIT",
+
+    "authors" : [{
+        "name": "Henning Leutz",
+        "email": "leutz@pcsg.de",
+        "homepage": "http://www.pcsg.de",
+        "role": "Developer"
+    }],
+
+    "support" : {
+        "email": "support@pcsg.de",
+        "url": "http://www.pcsg.de"
+    },
+
+    "require": {
+        "php" : ">=5.3",
+        "quiqqer/quiqqer" : "*@dev",
+        "bower-asset/font-awesome" : "1.*"
+    },
+
+    "autoload": {
+        "psr-0" : {
+            "QUI" : "src/"
+        }
+    }
+}
