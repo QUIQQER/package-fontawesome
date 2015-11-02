@@ -2,7 +2,7 @@
     "name" : "quiqqer/fontawesome",
     "type" : "quiqqer-plugin",
     "description" : "",
-    "version" : "dev-dev",
+    "version" : "dev-master",
     "license" : "MIT",
 
     "authors" : [{
