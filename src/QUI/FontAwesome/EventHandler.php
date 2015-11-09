@@ -37,6 +37,13 @@ class EventHandler
      */
     static function fontawesome($params, $smarty)
     {
+        if (file_exists(OPT_DIR .'bin/fontawesome/css/font-awesome.css')) {
+            return '<link href="'. URL_OPT_DIR .'bin/fontawesome/css/font-awesome.css"
+              rel="stylesheet"
+              type="text/css"
+                   />';
+        }
+
         return '<link href="'. URL_OPT_DIR .'bin/font-awesome/css/font-awesome.css"
           rel="stylesheet"
           type="text/css"
