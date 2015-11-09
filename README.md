@@ -1,4 +1,3 @@
-
 Font Awesome for QUIQQER
 ========
 
@@ -47,5 +46,5 @@ Entwickler
 Smarty Nutzung:
 
 ```
-{fontaweseom}
+{fontawesome}
 ```
