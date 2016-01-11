@@ -13,12 +13,11 @@ use QUI;
  */
 class EventHandler
 {
-
     /**
      * Event : on smarty init
      * @param \Smarty $Smarty - \Smarty
      */
-    static function onSmartyInit($Smarty)
+    public static function onSmartyInit($Smarty)
     {
         // {fontawesome}
         if (!isset($Smarty->registered_plugins['function']) ||
@@ -31,13 +30,20 @@ class EventHandler
     /**
      * Smarty brickarea function {fontawesome}
      *
-     * @param Array $params - function parameter
+     * @param array $params - function parameter
      * @param \Smarty $smarty - \Smarty
-     * @return Array|String
+     * @return array|String
      */
-    static function fontawesome($params, $smarty)
+    public static function fontawesome($params, $smarty)
     {
-        return '<link href="'. URL_OPT_DIR .'bin/font-awesome/css/font-awesome.css"
+        if (file_exists(OPT_DIR . 'bin/fontawesome/css/font-awesome.css')) {
+            return '<link href="' . URL_OPT_DIR . 'bin/fontawesome/css/font-awesome.css"
+              rel="stylesheet"
+              type="text/css"
+                   />';
+        }
+
+        return '<link href="' . URL_OPT_DIR . 'bin/font-awesome/css/font-awesome.css"
           rel="stylesheet"
           type="text/css"
                />';
