@@ -20,7 +20,7 @@
     "require": {
         "php" : ">=5.3",
         "quiqqer/quiqqer" : "*@dev",
-        "bower-asset/fontawesome" : "4.*"
+        "components/font-awesome" : ">=4"
     },
 
     "autoload": {
