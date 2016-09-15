@@ -23,7 +23,7 @@ class EventHandler
         if (!isset($Smarty->registered_plugins['function']) ||
             !isset($Smarty->registered_plugins['function']['fontawesome'])
         ) {
-            $Smarty->registerPlugin("function", "fontawesome", "\QUI\FontAwesome\EventHandler::fontawesome");
+            $Smarty->registerPlugin("function", "fontawesome", "\\QUI\\FontAwesome\\EventHandler::fontawesome");
         }
     }
 
@@ -47,5 +47,29 @@ class EventHandler
           rel="stylesheet"
           type="text/css"
                />';
+    }
+
+    /**
+     * event : on icons init
+     *
+     * @param QUI\Icons\Handler $Icons
+     */
+    public static function onIconsInit(QUI\Icons\Handler $Icons)
+    {
+        // css files
+        if (file_exists(OPT_DIR . 'bin/fontawesome/css/font-awesome.css')) {
+            $Icons->addCSSFile(URL_OPT_DIR . 'bin/fontawesome/css/font-awesome.css');
+        } else {
+            $Icons->addCSSFile(URL_OPT_DIR . 'bin/font-awesome/css/font-awesome.css');
+        }
+
+        // css classes
+        $cssList = QUI\FontAwesome\Util::getCSSClassList();
+
+        foreach ($cssList as $key => $value) {
+            $cssList[$key] = 'fa ' . $value;
+        }
+
+        $Icons->addIcons($cssList);
     }
 }
