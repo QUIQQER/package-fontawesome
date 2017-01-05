@@ -40,13 +40,19 @@ class EventHandler
             return '<link href="' . URL_OPT_DIR . 'bin/fontawesome/css/font-awesome.css"
               rel="stylesheet"
               type="text/css"
-                   />';
+                   />
+                   <link href="' . URL_OPT_DIR . 'quiqqer/fontawesome/bin/custom.css"
+              rel="stylesheet"
+              type="text/css" />';
         }
 
         return '<link href="' . URL_OPT_DIR . 'bin/font-awesome/css/font-awesome.css"
           rel="stylesheet"
           type="text/css"
-               />';
+               />
+               <link href="' . URL_OPT_DIR . 'quiqqer/fontawesome/bin/custom.css"
+              rel="stylesheet"
+              type="text/css" />';
     }
 
     /**

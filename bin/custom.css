@@ -1,0 +1,4 @@
+.fa-close:before {
+    content: '\00d7';
+    font-size: 1.3em;
+}
