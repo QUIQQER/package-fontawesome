@@ -1,0 +1,11 @@
+<quiqqer>
+    <package>
+        <title>
+            <locale group="quiqqer/fontawesome" var="package.title"/>
+        </title>
+
+        <description>
+            <locale group="quiqqer/fontawesome" var="package.description"/>
+        </description>
+    </package>
+</quiqqer>

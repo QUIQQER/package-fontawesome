@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/fontawesome" datatype="php,js">
+        <locale name="package.title">
+            <de><![CDATA[QUIQQER - FontAwesome]]></de>
+            <en><![CDATA[QUIQQER - FontAwesome]]></en>
+        </locale>
+        <locale name="package.description" html="true">
+            <de><![CDATA[Stellt Font Awesome für QUIQQER zur Verfügung.]]></de>
+            <en><![CDATA[Provides Font Awesome for QUIQQER.]]></en>
+        </locale>
+    </groups>
+</locales>
