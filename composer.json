@@ -1,7 +1,7 @@
 {
     "name" : "quiqqer/fontawesome",
     "type" : "quiqqer-plugin",
-    "description" : "",
+    "description" : "Provides Font Awesome for QUIQQER.",
     "version" : "dev-dev",
     "license" : "MIT",
 
