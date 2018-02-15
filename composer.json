@@ -1,7 +1,7 @@
 {
     "name" : "quiqqer/fontawesome",
     "type" : "quiqqer-plugin",
-    "description" : "",
+    "description" : "Provides Font Awesome for QUIQQER.",
     "version" : "dev-master",
     "license" : "MIT",
 
@@ -20,7 +20,7 @@
     "require": {
         "php" : ">=5.3",
         "quiqqer/quiqqer" : "*@dev",
-        "components/font-awesome" : ">=4"
+        "components/font-awesome" : "4.*"
     },
 
     "autoload": {
