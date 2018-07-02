@@ -1,3 +1,5 @@
+![Font Awesome](bin/images/Readme.jpg)
+
 Font Awesome for QUIQQER
 ========
 
