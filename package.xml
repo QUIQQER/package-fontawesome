@@ -8,6 +8,12 @@
             <locale group="quiqqer/fontawesome" var="package.description"/>
         </description>
 
+        <image src="URL_OPT_DIR/quiqqer/fontawesome/bin/images/Logo.jpg"/>
+
+        <preview>
+            <image src="URL_OPT_DIR/quiqqer/fontawesome/bin/images/preview/1.png"/>
+        </preview>
+
         <support>
             <email><![CDATA[support@pcsg.de]]></email>
             <forum><![CDATA[https://community.quiqqer.com]]></forum>
@@ -18,7 +24,7 @@
 
         <copyright>
             <name><![CDATA[PCSG - Computer & Internet Service OHG]]></name>
-            <license><![CDATA[]]></license>
+            <license><![CDATA[MIT]]></license>
         </copyright>
     </package>
 </quiqqer>
