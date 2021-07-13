@@ -37,23 +37,19 @@ class EventHandler
      */
     public static function fontawesome($params, $smarty)
     {
-        if (file_exists(OPT_DIR.'bin/fontawesome/css/font-awesome.css')) {
-            return '<link href="'.URL_OPT_DIR.'bin/quiqqer-asset/fontawesome/fontawesome/css/font-awesome.css"
+        if (file_exists(OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css')) {
+            return '<link href="'.URL_OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css"
               rel="stylesheet"
               type="text/css"
-                   />
-                   <link href="'.URL_OPT_DIR.'quiqqer/fontawesome/bin/custom.css"
-              rel="stylesheet"
-              type="text/css" />';
+            />
+            <link href="'.URL_OPT_DIR.'quiqqer/fontawesome/bin/custom.css" rel="stylesheet"type="text/css" />';
         }
 
-        return '<link href="'.URL_OPT_DIR.'bin/quiqqer-asset/font-awesome/fontawesome/css/font-awesome.css"
+        return '<link href="'.URL_OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css"
           rel="stylesheet"
           type="text/css"
-               />
-               <link href="'.URL_OPT_DIR.'quiqqer/fontawesome/bin/custom.css"
-              rel="stylesheet"
-              type="text/css" />';
+        />
+        <link href="'.URL_OPT_DIR.'quiqqer/fontawesome/bin/custom.css" rel="stylesheet" type="text/css" />';
     }
 
     /**
@@ -64,10 +60,10 @@ class EventHandler
     public static function onIconsInit(QUI\Icons\Handler $Icons)
     {
         // css files
-        if (file_exists(OPT_DIR.'bin/quiqqer-asset/fontawesome/fontawesome/css/font-awesome.css')) {
-            $Icons->addCSSFile(URL_OPT_DIR.'bin/quiqqer-asset/fontawesome/fontawesome/css/font-awesome.css');
+        if (file_exists(OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css')) {
+            $Icons->addCSSFile(URL_OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css');
         } else {
-            $Icons->addCSSFile(URL_OPT_DIR.'bin/quiqqer-asset/fontawesome/font-awesome/css/font-awesome.css');
+            $Icons->addCSSFile(URL_OPT_DIR.'bin/quiqqer-asset/font-awesome/font-awesome/css/font-awesome.css');
         }
 
         // css classes
