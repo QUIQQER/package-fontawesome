@@ -18,7 +18,7 @@
     "require": {
         "php": ">=5.3",
         "quiqqer\/quiqqer": "*@dev",
-        "npm-asset\/font-awesome": "4.*"
+        "quiqqer-asset\/font-awesome": "4.*"
     },
     "autoload": {
         "psr-0": {
